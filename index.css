@@ -100,9 +100,10 @@ ul,li
 {
     width:260px;
     float:left;
-    height:400px;
+    height:356px;
     border:solid 2px #e0efd7;
     border-radius:10px;
+    padding:22px 0;
 }
 
 #MiddleTranslate
@@ -114,4 +115,95 @@ ul,li
     float:right;
     padding:10px;
     overflow:hidden;
+}
+
+.NavHead 
+{
+    background-color:#eaf5f3;
+    width:100%;
+    height:26px;
+    text-align:center;
+    float:left;
+}
+.NHImgage
+{
+    background-image:url(Images/leftnav.png);
+    background-repeat:no-repeat;
+    display:block;
+    height:26px;
+    line-height:26px;
+    margin:0 auto;
+}
+.NavContent
+{
+    width:240px;
+    padding:5px 10px 0px 30px;
+    float:left;
+}
+    .NavContent li
+    {
+        width:50px;
+        float:left;
+        margin-bottom: 5px;
+    }
+        .NavContent li a
+        {
+            background-image:url(Images/leftsubnav.png);
+            background-repeat:no-repeat;
+            display:block;
+            width:100%;
+               text-indent: -999px;
+        }
+.jiaju
+{
+    background-position:0 0;
+}
+.shoushi
+{
+    background-position:-50px 0;
+}
+.baijian
+{
+    background-position:-100px 0;
+}
+.wenju
+{
+    background-position:-150px 0;
+}
+.sijin
+{
+    background-position:-206px 0;
+}
+.banhua
+{
+    background-position:-256px 0;
+}
+.guajian
+{
+    background-position:-306px 0;
+}
+.ysp
+{
+    width:50px;
+    background-position:0 center;
+}
+.zgsh
+{
+    background-position: -50px center;
+    width: 70px;
+}
+.xhds
+{
+    background-position: -120px center;
+    width: 70px;
+}
+.gwgyp
+{
+     background-position: -191px center;
+    width: 92px;
+}
+.yspdz
+{
+     background-position: -191px center;
+    width: 92px;
 }
