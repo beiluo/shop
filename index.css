@@ -182,6 +182,100 @@ ul,li
 {
     background-position:-306px 0;
 }
+
+.huaniao
+{
+    background-position:0 -37px;
+}
+.shanshui
+{
+    background-position:-50px -37px;
+}
+.renwu
+{
+    background-position:-100px -37px;
+}
+.nianhua
+{
+    background-position:-150px -37px;
+}
+.kaishu
+{
+    background-position:-206px -37px;
+}
+.lishu
+{
+    background-position:-257px -37px;
+}
+.zhuanshu
+{
+    background-position:-306px -37px;
+}
+
+.caoshu
+{
+    background-position:-356px -37px;
+}
+
+.fengjing
+{
+    background-position:0 -77px;
+}
+.renwu
+{
+    background-position:-50px -77px;
+}
+.jingwu
+{
+    background-position:-100px -77px;
+}
+.shuicai
+{
+    background-position:-150px -77px;
+}
+.banhua
+{
+    background-position:-206px -77px;
+}
+.diaosu
+{
+    background-position:-256px -77px;
+}
+
+
+.yuqi
+{
+    background-position:0 -114px;
+}
+.ciqi
+{
+    background-position:-50px -114px;
+}
+.zhubao
+{
+    background-position:-100px -114px;
+}
+.jinyintongqi
+{
+    background-position:-150px -114px;
+}
+.tongjing
+{
+    background-position:-232px -114px;
+}
+.baijian
+{
+    background-position:-282px -114px;
+}
+.foxiang
+{
+    background-position:-333px -114px;
+}
+.shoubajian
+{
+    background-position:-384px -114px;
+}
+
 .ysp
 {
     width:50px;
@@ -206,4 +300,287 @@ ul,li
 {
      background-position: -191px center;
     width: 92px;
+}
+
+#Content
+{
+    float:left;
+    width:100%;
+}
+#YanShengPin,#GuWan,#ZhongGuoShuHua,#XiHua,#YiShuPinDingZhi
+{
+    padding:7px 8px;
+    width:926px;
+    float:left;
+}
+.NavTop
+{
+    width:100%;
+    position:relative;
+    float:left;
+    height:41px;
+}
+.ntr
+{
+    background-image:url(Images/nav.png);
+    background-repeat:no-repeat;
+    width:139px;
+    height:37px;
+    position:absolute;
+    z-index:2;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+    line-height:37px;
+}
+.ntb
+{
+    background-color: #A84200;
+    border-radius: 3px 3px 3px 3px;
+    height: 30px;
+    position: absolute;
+    top: 11px;
+    width: 100%;
+    z-index: 1;
+}
+    .ntb ul
+    {
+        padding-left:140px;
+        margin-top:7px;
+    }
+     .ntb ul li
+    {
+         background-image:url(Images/bar.png);
+         background-repeat:no-repeat;
+         width:100px;
+         float:left;
+         text-indent: -999px;
+         height:14px;
+         border-right: 2px solid #F3E6DD;
+    }
+    .ntb .start
+    {
+        border-left: 2px solid #F3E6DD;
+    }
+
+    .ntb .jiaju
+    {
+        background-position: 0 0;
+    }
+
+    .ntb .shoushi
+    {
+        background-position: -100px 0;
+    }
+
+    .ntb .baijian
+    {
+        background-position: -204px 0;
+    }
+
+    .ntb .wenju
+    {
+        background-position: -300px 0;
+    }
+
+    .ntb .sijin
+    {
+        background-position: -406px 0;
+    }
+
+    #YanShengPin .ntb .banhua
+    {
+        background-position: -510px 0;
+    }
+
+    .ntb .guajian
+    {
+        background-position: -606px 0;
+    }
+    #ZhongGuoShuHua .ntb ul li
+{
+    width:90px;
+}
+.ntb .huaniao
+{
+    background-position:-5px -55px;
+}
+.ntb .shanshui
+{
+    background-position:-95px -55px;
+}
+#ZhongGuoShuHua .ntb .renwu
+{
+    background-position:-182px -55px;
+}
+.ntb .nianhua
+{
+    background-position:-260px -55px;
+}
+.ntb .kaishu
+{
+    background-position:-350px -55px;
+}
+.ntb .lishu
+{
+    background-position:-440px -55px;
+}
+.ntb .zhuanshu
+{
+    background-position:-526px -55px;
+}
+
+.ntb .caoshu
+{
+    background-position:-622px -55px;
+}
+
+.ntb .fengjing
+{
+    background-position:0 -82px;
+}
+.ntb .renwu
+{
+    background-position:-108px -82px;
+}
+.ntb .jingwu
+{
+    background-position:-208px -82px;
+}
+.ntb .shuicai
+{
+    background-position:-308px -82px;
+}
+.ntb .banhua
+{
+    background-position:-408px -82px;
+}
+.ntb .diaosu
+{
+    background-position:-508px -82px;
+}
+
+#GuWan .ntb ul li
+{
+    width:90px;
+}
+.ntb .yuqi
+{
+    background-position:-6px -28px;
+}
+.ntb .ciqi
+{
+    background-position:-96px -28px;
+}
+.ntb .zhubao
+{
+    background-position:-180px -28px;
+}
+.ntb .jinyintongqi
+{
+    background-position:-290px -28px;
+}
+.ntb .tongjing
+{
+    background-position:-390px -28px;
+}
+.ntb .baijian
+{
+    background-position:-474px -28px;
+}
+.ntb .foxiang
+{
+    background-position:-555px -28px;
+}
+.ntb .shoubajian
+{
+    background-position:-640px -28px;
+}
+
+.BarContent
+{
+    width:100%;
+    margin-top:7px;
+    float:left;
+}
+    .BarContent ul
+    {
+        width:100%;
+        padding:0;
+    }
+        .BarContent ul li
+        {
+            width:176px;
+            height:208px;
+            float:left;
+            border:solid 1px #E0EFD7;
+            margin-right:4px;
+            padding:2px;
+            margin-bottom:10px;
+        }
+    .BarContent .img
+    {
+        padding:3px;
+        border:solid 1px #E0EFD7;
+    }
+    .BarContent .like
+    {
+        background-image:url(Images/like.png);
+        background-repeat:no-repeat;
+        width:64px;
+        height:21px;
+        float:right;
+        margin:14px 4px 8px 4px;
+    }
+    .BarContent .title
+    {
+        float:left;
+        margin:14px 4px 8px 4px;
+         width:94px;
+        height:21px;
+        font-size:14px;
+        color:#333;
+    }
+    .BarContent .last
+    {
+        margin-right:0px;
+    }
+
+.ntgw
+{
+    background-color:#601986;
+}
+.ntzg
+{
+    background-color:#0068b7;
+}
+.ntxh
+{
+    background-color:#638c0b;
+}
+
+#YiShuPinDingZhi .ntr
+{
+    left: 380px;
+}
+#YiShuPinDingZhi .ntb
+{
+    background-color: #b16666;
+}
+#YiShuPinDingZhi ul
+{
+    width:898px;
+    margin:7px auto 0 auto;
+}
+#YiShuPinDingZhi li
+{
+   
+    width:430px;
+    height:249px;
+    padding:4px;
+}
+#YiShuPinDingZhi .first
+{
+    margin-right:14px;
 }
