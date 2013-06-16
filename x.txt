@@ -1,0 +1,42 @@
+[33mcommit 49b31463e4414e05f55b10edf2a79f677a9abfd8[m
+Author: beiluo <zx377359832@163.com>
+Date:   Sun Jun 16 22:36:04 2013 +0800
+
+    É¾³ýÒ»¸öÎÄ¼þ²âÊÔÏÂ
+
+[33mcommit fabed7bd93fbaf12ec69a12b3e7e803e6a7cf9b4[m
+Author: beiluo <zx377359832@163.com>
+Date:   Sun Jun 16 22:24:56 2013 +0800
+
+    Â²Ã¢ÃŠÃ”ÃŒÃ­Â¼Ã“Ò»Â¸Ã¶x.txt
+
+[33mcommit 447fd7da2a58ef9f3fba552ddad19b05cb3895fe[m
+Author: beiluo <zx377359832@163.com>
+Date:   Sun Jun 16 18:21:42 2013 +0800
+
+    #1
+
+[33mcommit afbcb7b41f7f126da6bb1b4b83bd3f0abb2218a8[m
+Merge: 1be297f d38e1a8
+Author: beiluo <zx377359832@163.com>
+Date:   Sun Jun 16 03:03:56 2013 +0800
+
+    Merge branch 'master' of github.com:beiluo/shop
+
+[33mcommit 1be297f9e9578981f7827d5c85f3954d78327f0d[m
+Author: beiluo <zx377359832@163.com>
+Date:   Sun Jun 16 03:03:13 2013 +0800
+
+    modified Nav Left
+
+[33mcommit d38e1a8442bdd9c0d54f79241d8a0a9aa39edb2b[m
+Author: beiluo <zx377359832@163.com>
+Date:   Sun Jun 16 02:14:08 2013 +0800
+
+    Create README.md
+
+[33mcommit b18d88683d7686e144176bcfbf82a8abf4b25422[m
+Author: beiluo <zx377359832@163.com>
+Date:   Sun Jun 16 02:11:33 2013 +0800
+
+    Init
