@@ -82,6 +82,7 @@ ul,li
 {
     float:left;
     margin-top:12px;
+    width: 100%;
 }
 
 #Section_Left
@@ -89,7 +90,56 @@ ul,li
     float:left;
     width:942px;
 }
+#ShouCang
+{
+    float: right;
+    width: 330px;
+    padding-top: 60px;
+}
 
+    #ShouCang ul
+    {
+        width: 100%;
+    }
+
+        #ShouCang ul li
+        {
+            width: 30%;
+            float: right;
+        }
+
+            #ShouCang ul li a
+            {
+                font-size: 16px;
+                text-decoration: none;
+                color: #ccc;
+            }
+
+#Search_input
+{
+    float: right;
+    width: 300px;
+    text-align:right;
+    padding:30px 24px 0 0;
+}
+    #Search_input input[type="text"]
+    {
+        width:200px;
+        height:26px;
+        border:none;
+        background-color:#e5e5e5;
+        border-radius:7px 0 0 7px;
+    }
+    #Search_input input[type="submit"]
+    {
+        width:37px;
+        height:26px;
+        background-image:url(Images/serach.png);
+        background-repeat:no-repeat;
+        text-indent:-999px;
+        border:none;
+       background-position:left 1px;
+    }
 #Top
 {
     float:left;
@@ -583,4 +633,91 @@ ul,li
 #YiShuPinDingZhi .first
 {
     margin-right:14px;
+}
+
+#Section_Right
+{
+    float:right;
+    width:260px;
+}
+#Login
+{
+    padding:22px;
+    border:solid 2px #e0efd7;
+    width:212px;
+    float:right;
+    height:352px;
+    border-radius:10px;
+}
+
+
+.reg
+{
+    background-image: url("Images/reiger.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 25px;
+    text-indent: -999px;
+    width: 113px;
+}
+
+#denglu input[type="text"], #denglu input[type="password"]
+{
+    width:182px;
+    height:28px;
+    border:solid 1px #ccc;
+}
+
+#denglu input[type="submit"]
+{
+    background-image: url("Images/login.png");
+    background-repeat: no-repeat;
+    border: medium none;
+    height: 24px;
+    width: 55px;
+}
+
+#denglu li
+{
+    height: 35px;
+}
+
+#TuiJian
+{
+    height: 550px;
+    width: 256px;
+    float: right;
+    border: solid 2px #e0efd7;
+    border-radius: 10px;
+    margin-top:13px;
+}
+
+#SheJiShi
+{
+    height: 492px;
+    width: 256px;
+    float: right;
+    border: solid 2px #e0efd7;
+    border-radius: 10px;
+    margin-top:13px;
+}
+
+#Designer
+{
+    height: 492px;
+    width: 256px;
+    float: right;
+    border: solid 2px #e0efd7;
+    border-radius: 10px;
+    margin-top:13px;
+}
+
+#NowSee
+{
+    height: 314px;
+    width: 256px;
+    float: right;
+    border: solid 2px #e0efd7;
+    border-radius: 10px;
+    margin-top:14px;
 }
