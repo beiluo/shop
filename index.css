@@ -562,18 +562,18 @@ ul,li
     }
         .BarContent ul li
         {
-            width:176px;
-            height:208px;
+            width:180px;
             float:left;
-            border:solid 1px #E0EFD7;
-            margin-right:4px;
             padding:2px;
-            margin-bottom:10px;
+            border-bottom: 1px solid #DDDDDD;
+			border-top: 1px solid #DDDDDD;
+			border-right: 1px dotted #F1F1F1;
+			padding-top:14px;
         }
     .BarContent .img
     {
-        padding:3px;
-        border:solid 1px #E0EFD7;
+	text-align: center;
+        padding:4px;
     }
     .BarContent .like
     {
@@ -587,15 +587,25 @@ ul,li
     .BarContent .title
     {
         float:left;
-        margin:14px 4px 8px 4px;
-         width:94px;
-        height:21px;
-        font-size:14px;
+        margin:4px;
+         width:170px;
+        line-height:21px;
         color:#333;
     }
+	  .BarContent .price
+    {
+        float:left;
+        margin:4px;
+         width:170px;
+        height:21px;
+        color:#333;
+    }
+	.BarContent .price strong{
+		color:#E4393C;
+	}
     .BarContent .last
     {
-        margin-right:0px;
+        border-right:none;
     }
 
 .ntgw
@@ -878,7 +888,7 @@ ul,li
 {
     float:left;
     font-size:16px;
-    color:#d7ebe4;
+    color:#429da0;
     font-weight:bold;
     display:block;
     width:200px;
@@ -939,7 +949,7 @@ ul,li
 {
     float:left;
     font-size:16px;
-    color:#d7ebe4;
+    color:#429da0;
     font-weight:bold;
     display:block;
     width:200px;
@@ -982,14 +992,14 @@ ul,li
     #Footer .fot
     {
         height:125px;
-        border:solid 2px #a0d1be;
+        border:solid 2px #429da0;
         border-right:none;
         border-left:none;
     }
     #Footer .huoban
     {
         height: 60px;
-        border-top: solid 2px #a0d1be;
+        border-top: solid 2px #429da0;
     }
 
        #Footer .hzhb
@@ -1003,7 +1013,7 @@ ul,li
         {
                  font-size:20px;
        font-weight:bold;
-       color:#a0d1be;
+       color:#429da0;
        padding:0 10px;
        background-color:white;
        
@@ -1071,7 +1081,7 @@ ul,li
     line-height:33px;
     font-size:16px;
     font-weight:bold;
-    color:#a0d1be;
+    color:#429da0;
     float:left;
     padding:0 10px;
 }
