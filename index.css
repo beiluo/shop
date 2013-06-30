@@ -446,6 +446,7 @@ ul,li
          text-indent: -999px;
          height:14px;
          border-right: 2px solid #F3E6DD;
+         cursor:pointer;
     }
     .ntb .start
     {
@@ -1177,3 +1178,32 @@ float:left;
         color:#666666;
         text-decoration:none;
     }
+.move
+{
+    background-image:url(Images/s.png);
+    background-repeat:no-repeat;
+    background-position:left top;
+    width:20px;
+    height:14px;
+    position:absolute;
+    top:20px;
+}
+#YanShengPin .move
+{
+    left:182px;
+}
+
+#GuWan .move
+{
+     left:177px;
+}
+
+#ZhongGuoShuHua .move
+{
+     left:177px;
+}
+
+#XiHua .move
+{
+     left:182px;
+}
