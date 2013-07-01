@@ -7,7 +7,7 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
 }
 #wrap
 {
-    width:1210px;
+    width:1089px;
     margin:0 auto;
 }
 
@@ -125,12 +125,12 @@ ul,li
 #Section_Left
 {
     float:left;
-    width:942px;
+    width:856px;
 }
 #ShouCang
 {
     float: right;
-    width: 330px;
+    width: 220px;
     padding-top: 60px;
 }
 
@@ -141,7 +141,7 @@ ul,li
 
         #ShouCang ul li
         {
-            width: 30%;
+            width: 40%;
             float: right;
         }
 
@@ -155,13 +155,13 @@ ul,li
 #Search_input
 {
     float: right;
-    width: 300px;
+    width: 220px;
     text-align:right;
-    padding:30px 24px 0 0;
+    padding:30px 0px 0 0;
 }
     #Search_input input[type="text"]
     {
-        width:200px;
+        width:150px;
         height:26px;
         border:none;
         background-color:#e5e5e5;
@@ -195,7 +195,7 @@ ul,li
 
 #MiddleTranslate
 {
-    width:650px;
+    width:560px;
     height:380px;
     border:solid 2px #e0efd7;
     border-radius:10px;
@@ -397,8 +397,8 @@ ul,li
 }
 #YanShengPin,#GuWan,#ZhongGuoShuHua,#XiHua,#YiShuPinDingZhi
 {
-    padding:7px 8px;
-    width:926px;
+    padding:7px 0px;
+    width:856px;
     float:left;
 }
 .NavTop
@@ -441,7 +441,7 @@ ul,li
     {
          background-image:url(Images/bar.png);
          background-repeat:no-repeat;
-         width:100px;
+         width:98px;
          float:left;
          text-indent: -999px;
          height:14px;
@@ -489,7 +489,7 @@ ul,li
     }
     #ZhongGuoShuHua .ntb ul li
 {
-    width:90px;
+    width:85px;
 }
 .ntb .huaniao
 {
@@ -552,7 +552,7 @@ ul,li
 
 #GuWan .ntb ul li
 {
-    width:90px;
+    width:85px;
 }
 .ntb .yuqi
 {
@@ -600,20 +600,28 @@ ul,li
     }
         .BarContent ul li
         {
-            width:180px;
+            width:166px;
             float:left;
             padding:2px;
             border-bottom: 1px solid #DDDDDD;
 			border-top: 1px solid #DDDDDD;
 			border-right: 1px dotted #F1F1F1;
 			padding-top:14px;
-            height:217px;
+            _height:217px;
+            min-height:217px;
         }
     .BarContent .img
     {
 	text-align: center;
         padding:4px;
     }
+        .BarContent .img img
+        {
+            _width:150px;
+            height:130px;
+            min-width:130px;
+            max-width:150px;
+        }
     .BarContent .like
     {
         background-image:url(Images/like.png);
@@ -627,7 +635,7 @@ ul,li
     {
         float:left;
         margin:4px;
-         width:170px;
+         width:158px;
         line-height:21px;
         color:#333;
     }
@@ -676,10 +684,16 @@ ul,li
 #YiShuPinDingZhi li
 {
    
-    width:430px;
+    width:410px;
     height:249px;
     padding:4px;
+    border:1px solid #DDDDDD;
 }
+    #YiShuPinDingZhi li img
+    {
+        width:410px;
+        height:249px;
+    }
 #YiShuPinDingZhi .first
 {
     margin-right:14px;
@@ -688,15 +702,14 @@ ul,li
 #Section_Right
 {
     float:right;
-    width:260px;
+    width:226px;
 }
 #Login
 {
-    padding:22px 22px 22px 34px;
+    padding:14px 8px 14px 14px;
     border:solid 2px #e0efd7;
     width:200px;
     float:right;
-    height:352px;
     border-radius:10px;
 }
 
@@ -749,8 +762,7 @@ ul,li
 }
 #TuiJian
 {
-    height: 534px;
-    width: 240px;
+    width: 206px;
     float: right;
     border: solid 2px #e0efd7;
     border-radius: 10px;
@@ -760,21 +772,29 @@ ul,li
     #TuiJian div
     {
         float:left;
-         width:242px;
+         width:206px;
          text-align:center;
     }
+        #TuiJian div img
+        {
+            width:206px;
+        }
     #TuiJian ul
     {
-        width:242px;
+        width:206px;
         float:left;
         margin-top:10px;
     }
      #TuiJian ul li
     {
-        width:119px;
+        width:101px;
         float:left;
-        margin-bottom:19px;
+        margin-bottom:4px;
     }
+        #TuiJian ul li img
+        {
+            width:92px;
+        }
         #TuiJian ul li a
         {
             border:solid 1px #d9f0ce;
@@ -795,8 +815,7 @@ ul,li
 
 #SheJiShi
 {
-    height: 476px;
-    width: 240px;
+    width: 206px;
     float: right;
     border: solid 2px #e0efd7;
     border-radius: 10px;
@@ -807,9 +826,18 @@ ul,li
     {
         float:left;
     }
+        #SheJiShi div img
+        {
+            width:206px;
+        }
+          #SheJiShi ul div img
+        {
+            width:90px;
+            height:90px;
+        }
 #SheJiShi ul
 {
-     width:240px;
+     width:206px;
         float:left;
         margin-top:7px;
 }
@@ -826,13 +854,13 @@ ul,li
         display:block;
         padding:4px;
          border:solid 1px #d9f0ce;
-         width:97px;
-         height:91px;
+         width:90px;
+         height:90px;
     }
 .s_name,.s_nick
 {
-    width:112px;
-    padding:10px;
+    width:96px;
+    padding:10px 5px;
     float:left;
     height:33px;
     line-height:33px;
@@ -841,7 +869,7 @@ ul,li
 }
 .s_des
 {
-    width:240px;
+    width:206px;
     line-height:150%;
     font-size:12px;
 }
@@ -854,44 +882,63 @@ ul,li
 }
 #Designer
 {
-    height: 476px;
-    width: 240px;
+    width: 206px;
     float: right;
     border: solid 2px #e0efd7;
     border-radius: 10px;
     margin-top:13px;
     padding:8px;
 }
-#Designer ul
-{
-     width:240px;
-        float:left;
-        margin-top:7px;
-}
-    #Designer ul li
+    #Designer ul
     {
-        float:left;
+        width: 206px;
+        float: left;
+        margin-top: 7px;
+    }
+
+        #Designer ul li
+        {
+            float: left;
+        }
+
+    #Designer div img
+    {
+        width: 206px;
+    }
+
+    #Designer ul div img
+    {
+        width: 90px;
+        height: 90px;
     }
 #NowSee
 {
-    height: 298px;
-    width: 240px;
+    width: 206px;
     float: right;
     border: solid 2px #e0efd7;
     border-radius: 10px;
     margin-top:14px;
     padding:8px;
 }
+    #NowSee div img
+    {
+        width:206px;
+    }
+     #NowSee ul div img
+    {
+        width:70px;
+        height:70px;
+    }
     #NowSee ul
     {
         float:left;
         margin-top:10px;
-        width:240px;
+        width:206px;
     }
         #NowSee ul li
         {
             float:left;
-            width:240px;
+            width:206px;
             margin-bottom:7px;
         }
 .n_img
@@ -908,8 +955,8 @@ ul,li
     }
     .n_name
 {
-    width:132px;
-    padding:4px 10px;
+    width:114px;
+    padding:4px;
     float:left;
     height:16px;
     line-height:16px;
@@ -918,9 +965,9 @@ ul,li
 }
 .n_des
 {
-    width:132px;
+    width:114px;
     line-height:150%;
-    padding:0 10px;
+    padding:0 4px;
     float:left;
 }
 .hezuo span
@@ -972,8 +1019,8 @@ ul,li
 .register
 {
     width:200px;
-    margin-top:28px;
-    margin-bottom:28px;
+    margin-top:8px;
+    margin-bottom:8px;
     float:left;
 }
     .register a
@@ -1038,7 +1085,7 @@ ul,li
     {
         float:left;
         width:1000px;
-        padding:20px 105px;
+        padding:20px 45px;
         border:solid 1px #DDDDDD;
         border-right:none;
         border-left:none;
