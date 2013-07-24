@@ -2,69 +2,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>艺术口袋</title>
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <link href="allinone_thumbnailsBanner.css" rel="stylesheet" type="text/css">
-    <script src="jquery.min.js" type="text/javascript"></script>
-    <script src="jquery-ui.min.js"></script>
-    <script src="allinone_thumbnailsBanner.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function () {
-            $('#Banner_simple').allinone_thumbnailsBanner({
-                skin: 'simple',
-                numberOfThumbsPerScreen: 7,
-                width: 560,
-                height: 294,
-                thumbsReflection: 0,
-                defaultEffect: 'random'
-            });
-
-            $(".ntb li").mouseover(function () {
-                var index = $(this).index();
-                var current = $("ul", $(this).parents("div.NavTop").siblings("div.BarContent")).eq(index);
-                current.siblings("ul").hide();
-                current.show();
-                var width = $(this).outerWidth();
-                var offset = $(this).position().left;
-                var left = offset + width / 2 - 10;
-                $(this).parent().siblings("div.move").animate({left:left+"px"},300);
-               
-            });
-        });
-    </script>
+    <link href="ECImages/index.css" rel="stylesheet" type="text/css" />
+    <link href="ECImages/allinone_thumbnailsBanner.css" rel="stylesheet" type="text/css">
+    <script src="ECImages/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="wrap">
         <div id="Head">
             <div id="Logo">
             </div>
-            <div id="MiddleNav">
-                <div id="Banner">
-                </div>
-                <div id="Nav">
+            <div class="top">
+                <div class="topleft">
                     <ul>
-                        <li class="nav_home"><a href="#">首页</a></li>
-                        <li class="nav_ysysp"><a href="#">艺术衍生品</a></li>
-                        <li class="nav_zgsh"><a href="#">中国书画</a></li>
-                        <li class="nav_xhds"><a href="#">西画/雕塑</a></li>
-                        <li class="nav_gwgyp"><a href="#">古玩/工艺品</a></li>
-                        <li class="nav_yspdz"><a href="#">艺术品定制</a></li>
+                        <li><a href="#">关于网站</a></li>
+                        <li><a href="#">收藏网站</a></li>
+                        <li id="serach"><a href="#">搜索</a>&nbsp;&nbsp;<input type="text" class="Search_input" /></li>
                     </ul>
                 </div>
-            </div>
-            <div id="Search">
-                <div id="ShouCang">
-                    <ul>
+                <div class="topright">
+                 <ul>
+                        <li><a href="#">登录</a></li>
+                        <li><a href="#">注册</a></li>
                         <li><a href="#">购物车</a></li>
-                        <li><a href="#">收藏本站</a></li>
-
                     </ul>
                 </div>
-                <div id="Search_input">
-                    <input type="text" /><input type="submit" value="搜索" />
-                </div>
             </div>
-        </div>
-        <div id="Line">
         </div>
         <div id="Container">
             <div id="Section_Left">
@@ -124,96 +86,7 @@
                         </div>
                     </div>
                     <div id="MiddleTranslate">
-                        <div id="Banner_simple">
-                            <ul class="Banner_list">
-                                <li data-text-id="#photoText1" data-bottom-thumb="images/01_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qldu0yfj20qo0ao418.jpg"></li>
-                                <li data-text-id="#photoText2" data-bottom-thumb="images/02_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qls1yctj20qo0aoacr.jpg"></li>
-                                <li data-text-id="#photoText3" data-bottom-thumb="images/03_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qm2rnzgj20qo0aoac7.jpg"></li>
-                                <li data-text-id="#photoText4" data-bottom-thumb="images/04_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmb4deij20qo0aoq5s.jpg"></li>
-                                <li data-text-id="#photoText5" data-bottom-thumb="images/05_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmj98stj20qo0aotbh.jpg"></li>
-                                <li data-text-id="#photoText1" data-bottom-thumb="images/01_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qldu0yfj20qo0ao418.jpg"></li>
-                                <li data-text-id="#photoText2" data-bottom-thumb="images/02_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qls1yctj20qo0aoacr.jpg"></li>
-                                <li data-text-id="#photoText3" data-bottom-thumb="images/03_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qm2rnzgj20qo0aoac7.jpg"></li>
-                                <li data-text-id="#photoText4" data-bottom-thumb="images/04_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmb4deij20qo0aoq5s.jpg"></li>
-                                <li data-text-id="#photoText5" data-bottom-thumb="images/05_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmj98stj20qo0aotbh.jpg"></li>
-                                <li data-text-id="#photoText1" data-bottom-thumb="images/01_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qldu0yfj20qo0ao418.jpg"></li>
-                                <li data-text-id="#photoText2" data-bottom-thumb="images/02_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qls1yctj20qo0aoacr.jpg"></li>
-                                <li data-text-id="#photoText3" data-bottom-thumb="images/03_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qm2rnzgj20qo0aoac7.jpg"></li>
-                                <li data-text-id="#photoText4" data-bottom-thumb="images/04_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmb4deij20qo0aoq5s.jpg"></li>
-                                <li data-text-id="#photoText5" data-bottom-thumb="images/05_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmj98stj20qo0aotbh.jpg"></li>
-                                <li data-text-id="#photoText1" data-bottom-thumb="images/01_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qldu0yfj20qo0ao418.jpg"></li>
-                                <li data-text-id="#photoText2" data-bottom-thumb="images/02_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qls1yctj20qo0aoacr.jpg"></li>
-                                <li data-text-id="#photoText3" data-bottom-thumb="images/03_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qm2rnzgj20qo0aoac7.jpg"></li>
-                                <li data-text-id="#photoText4" data-bottom-thumb="images/04_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmb4deij20qo0aoq5s.jpg"></li>
-                                <li data-text-id="#photoText5" data-bottom-thumb="images/05_simple.jpg">
-                                    <img alt="" src="Images/adde8400jw1e45qmj98stj20qo0aotbh.jpg"></li>
-                                <li data-text-id="#photoText2" data-bottom-thumb="images/02_simple.jpg">
-                                    <img alt="" src="Images/adde8400gw1e45qls1yctj20qo0aoacr.jpg"></li>
-                            </ul>
-                            <div class="photo_texts" id="photoText1">
-                                <div class="text_line textElement11_simple" data-delay="0" data-fade-start="0" data-duration="0.5"
-                                    data-final-top="307" data-final-left="0" data-initial-top="60" data-initial-left="0">
-                                    &nbsp;&nbsp;&nbsp;UP TO <a href="http://www.17sucai.com/" target="_blank">4 TYPES</a>
-                                    OF SLIDERS<br>
-                                    &nbsp;&nbsp;&nbsp;Each with multiple SKINS
-                                </div>
-                            </div>
-                            <div class="photo_texts" id="photoText2">
-                                <div class="text_line textElement21_simple" data-delay="0" data-fade-start="0" data-duration="0.5"
-                                    data-final-top="60" data-final-left="45" data-initial-top="60" data-initial-left="200">
-                                    <span style="font-weight: bold;">16 TRANSITION EFFECTS<br>
-                                        FOR IMAGES</span><br>
-                                    optional can set the transition<br>
-                                    for each image
-                                </div>
-                            </div>
-                            <div class="photo_texts" id="photoText3">
-                                <div class="text_line textElement31_simple" data-delay="0" data-fade-start="0" data-duration="0.5"
-                                    data-final-top="60" data-final-left="70" data-initial-top="160" data-initial-left="70">
-                                    <span>Animated text from any direction</span><br>
-                                    <span style="text-transform: uppercase; font-weight: bold;">top, bottom, left<br>
-                                        and right</span><br>
-                                    Any color, CSS and HTML formated
-                                </div>
-                            </div>
-                            <div class="photo_texts" id="photoText4">
-                                <div class="text_line textElement41_simple" data-delay="0" data-fade-start="0" data-duration="0.5"
-                                    data-final-top="60" data-final-left="480" data-initial-top="60" data-initial-left="100">
-                                    <span style="text-transform: uppercase; font-weight: bold;">16 transition effects<br>
-                                        for images</span><br>
-                                    optional can set the transition<br>
-                                    for each image
-                                </div>
-                            </div>
-                            <div class="photo_texts" id="photoText5">
-                                <div class="text_line textElement51_simple" data-delay="0" data-fade-start="0" data-duration="0.5"
-                                    data-final-top="0" data-final-left="0" data-initial-top="200" data-initial-left="0">
-                                    <span style="text-transform: uppercase; font-weight: bold;">Up to 4 types of <a href="http://www.17sucai.com/"
-                                        target="_blank">sliders</a></span><br>
-                                    Each with multiple skins
-                                </div>
-                            </div>
-
-                        </div>
+                        
                     </div>
                 </div>
                 <div id="Content">
@@ -222,13 +95,11 @@
                             <div class="ntr">衍生品</div>
                             <div class="ntb">
                                 <ul>
-                                    <li class="start jiaju">家居</li>
+                                    <li class="start jiashi">家饰</li>
+                                     <li class="sijin">丝巾</li>
                                     <li class="shoushi">首饰</li>
-                                    <li class="baijian">摆件</li>
-                                    <li class="weju">文具</li>
-                                    <li class="sijin">丝巾</li>
-                                    <li class="banhua">版画</li>
-                                    <li class="guajian">挂件</li>
+                                    <li class="qita">其他</li>
+                                    <li class="shuzibanhua">数字版画</li>
                                 </ul>
                                 <div class='move'></div>
                             </div>
@@ -238,7 +109,7 @@
                             <ul>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -250,7 +121,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -262,7 +133,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -274,7 +145,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -286,7 +157,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -301,7 +172,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -313,7 +184,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -325,7 +196,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -337,7 +208,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -349,7 +220,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -364,7 +235,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -376,7 +247,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -388,7 +259,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -400,7 +271,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -412,7 +283,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -427,7 +298,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -439,7 +310,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -451,7 +322,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -463,7 +334,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -475,7 +346,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -490,7 +361,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -502,7 +373,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -514,7 +385,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -526,7 +397,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -538,7 +409,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -553,7 +424,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -565,7 +436,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -577,7 +448,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -589,7 +460,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -601,7 +472,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -616,7 +487,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -628,7 +499,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -640,7 +511,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -652,7 +523,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -664,7 +535,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -681,27 +552,23 @@
 
                     <div id="GuWan">
                         <div class="NavTop">
-                            <div class="ntr">古玩/工艺品</div>
+                            <div class="ntr">传统经典</div>
                             <div class="ntb ntgw">
                                 <ul>
-                                    <li class="start yuqi">玉器</li>
-                                    <li class="ciqi">瓷器</li>
-                                    <li class="zhubao">珠宝</li>
-                                    <li class="jinyintongqi">金银铜器</li>
-                                    <li class="tongjing">铜镜</li>
-                                    <li class="baijian">摆件</li>
-                                    <li class="foxiang">佛像</li>
-                                    <li class="shoubajian">手把件</li>
+                                    <li class="start huaniao">花鸟</li>
+                                    <li class="shanshui">山水</li>
+                                    <li class="renwu">人物</li>
+                                    <li class="shufa">书法</li>
                                 </ul>
                                   <div class='move'></div>
                             </div>
                         </div>
-                        <div class="BarContent">
-                            <!--玉器-->
+                       <div class="BarContent">
+                              <!--风景-->
                            <ul>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -713,7 +580,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -725,7 +592,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -737,7 +604,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -749,7 +616,67 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                     <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -760,11 +687,11 @@
                                     </div>
                                 </li>
                             </ul>
-                               <!--瓷器-->
+                             <!--人物-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -776,7 +703,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -788,7 +715,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -800,7 +727,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -812,7 +739,67 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                     <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -823,11 +810,11 @@
                                     </div>
                                 </li>
                             </ul>
-                               <!--珠宝-->
+                             <!--静物-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -839,7 +826,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -851,7 +838,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -863,7 +850,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -875,7 +862,67 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                     <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -886,11 +933,11 @@
                                     </div>
                                 </li>
                             </ul>
-                               <!--金银铜器-->
+                             <!--年画-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -902,7 +949,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -914,7 +961,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -926,7 +973,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -938,22 +985,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                               <!--铜镜-->
-                          <ul style="display:none;">
-                                <li>
-                                    <div class="img">
-                                        <img src="Images/l.png" />
+                                     <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -965,7 +997,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                      <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -977,7 +1009,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -989,7 +1021,19 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1001,7 +1045,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1012,11 +1056,11 @@
                                     </div>
                                 </li>
                             </ul>
-                               <!--摆件-->
+                             <!--水彩-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1028,7 +1072,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1040,7 +1084,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1052,7 +1096,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1064,22 +1108,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                               <!--佛像-->
-                          <ul style="display:none;">
-                                <li>
-                                    <div class="img">
-                                        <img src="Images/l.png" />
+                                     <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1091,7 +1120,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                      <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1103,7 +1132,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1115,7 +1144,19 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1127,7 +1168,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1138,11 +1179,11 @@
                                     </div>
                                 </li>
                             </ul>
-                               <!--手把件-->
+                             <!--版画-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1154,7 +1195,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1166,7 +1207,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                        <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1178,7 +1219,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1190,7 +1231,190 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/l.png" />
+                                     <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                             <!--雕塑-->
+                            <ul style="display:none;">
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                     <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                      <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                       <img src="ECImages/xh.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1212,27 +1436,24 @@
                         <div class="BarContent">
                             <ul>
                                 <li class="first">
-                                    <img src="Images/demob.png" />
+                                    <img src="ECImages/demob.png" />
                                 </li>
                                 <li>
-                                    <img src="Images/demob.png" />
+                                    <img src="ECImages/demob.png" />
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div id="ZhongGuoShuHua">
                         <div class="NavTop">
-                            <div class="ntr">中国书画</div>
+                            <div class="ntr">架上绘画</div>
                             <div class="ntb ntzg">
                                 <ul>
-                                    <li class="start huaniao">花鸟</li>
-                                    <li class="shanshui">山水</li>
-                                    <li class="renwu">人物</li>
-                                    <li class="nianhua">年画</li>
-                                    <li class="kaishu">楷书</li>
-                                    <li class="lishu">隶书</li>
-                                    <li class="zhuanshu">篆书</li>
-                                    <li class="caoshu">草书</li>
+                                    <li class="start youhua">油画</li>
+                                    <li class="bahua">版画</li>
+                                    <li class="xinshuimo">新水墨</li>
+                                    <li class="fencai">粉彩</li>
+                                    <li class="zonghecailiao">综合材料</li>
                                 </ul>
                                   <div class='move'></div>
                             </div>
@@ -1242,7 +1463,7 @@
                             <ul>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1254,7 +1475,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1266,7 +1487,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1278,7 +1499,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1290,7 +1511,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1302,7 +1523,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1314,7 +1535,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1326,7 +1547,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1338,7 +1559,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1350,7 +1571,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1365,7 +1586,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1377,7 +1598,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1389,7 +1610,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1401,7 +1622,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1413,7 +1634,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1425,7 +1646,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1437,7 +1658,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1449,7 +1670,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1461,7 +1682,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1473,7 +1694,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1488,7 +1709,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1500,7 +1721,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1512,7 +1733,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1524,7 +1745,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1536,7 +1757,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1548,7 +1769,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1560,7 +1781,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1572,7 +1793,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1584,7 +1805,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1596,7 +1817,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1611,7 +1832,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1623,7 +1844,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1635,7 +1856,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1647,7 +1868,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1659,7 +1880,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1671,7 +1892,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1683,7 +1904,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1695,7 +1916,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1707,7 +1928,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1719,7 +1940,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1734,7 +1955,7 @@
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1746,7 +1967,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1758,7 +1979,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1770,7 +1991,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1782,7 +2003,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1794,7 +2015,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1806,7 +2027,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1818,7 +2039,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1830,7 +2051,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1842,7 +2063,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1857,7 +2078,7 @@
                             <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1869,7 +2090,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1881,7 +2102,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1893,7 +2114,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1905,7 +2126,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1917,7 +2138,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1929,7 +2150,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1941,7 +2162,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1953,7 +2174,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1965,7 +2186,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1980,7 +2201,7 @@
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -1992,7 +2213,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2004,7 +2225,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2016,7 +2237,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2028,7 +2249,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2040,7 +2261,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2052,7 +2273,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2064,7 +2285,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2076,7 +2297,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2088,7 +2309,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2103,7 +2324,7 @@
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2115,7 +2336,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2127,7 +2348,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2139,7 +2360,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2151,7 +2372,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2163,7 +2384,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2175,7 +2396,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2187,7 +2408,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2199,7 +2420,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/zg.jpg"  />
+                                       <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2211,7 +2432,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                        <img src="Images/zg.jpg"  />
+                                        <img src="ECImages/zg.jpg"  />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2226,27 +2447,18 @@
                     </div>
                     <div id="XiHua">
                         <div class="NavTop">
-                            <div class="ntr">西画/雕塑</div>
-                            <div class="ntb ntxh">
-                                <ul>
-                                    <li class="start fengjing">风景</li>
-                                    <li class="renwu">人物</li>
-                                    <li class="jingwu">静物</li>
-                                    <li class="nianhua">年画</li>
-                                    <li class="shuicai">水彩</li>
-                                    <li class="banhua">版画</li>
-                                    <li class="diaosu">雕塑</li>
-                                </ul>
-
-                                  <div class='move'></div>
+                            <div class="ntr">雕塑装置</div>
+                            <div class="ntr ntr2">
+                               影像艺术
                             </div>
                         </div>
-                        <div class="BarContent">
-                              <!--风景-->
+                        
+                         <div class="BarContent">
+                            <!--玉器-->
                            <ul>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2258,7 +2470,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2270,7 +2482,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2282,7 +2494,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2294,67 +2506,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                     <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2365,11 +2517,11 @@
                                     </div>
                                 </li>
                             </ul>
-                             <!--人物-->
+                               <!--瓷器-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2381,7 +2533,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2393,7 +2545,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2405,7 +2557,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2417,67 +2569,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                     <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2488,11 +2580,11 @@
                                     </div>
                                 </li>
                             </ul>
-                             <!--静物-->
+                               <!--珠宝-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2504,7 +2596,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2516,7 +2608,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2528,7 +2620,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2540,67 +2632,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                     <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2611,11 +2643,11 @@
                                     </div>
                                 </li>
                             </ul>
-                             <!--年画-->
+                               <!--金银铜器-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2627,7 +2659,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2639,7 +2671,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2651,7 +2683,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2663,67 +2695,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                     <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2734,11 +2706,74 @@
                                     </div>
                                 </li>
                             </ul>
-                             <!--水彩-->
+                               <!--铜镜-->
+                          <ul style="display:none;">
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                               <!--摆件-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2750,7 +2785,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2762,7 +2797,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2774,7 +2809,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2786,67 +2821,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                     <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2857,11 +2832,74 @@
                                     </div>
                                 </li>
                             </ul>
-                             <!--版画-->
+                               <!--佛像-->
+                          <ul style="display:none;">
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="img">
+                                        <img src="ECImages/l.png" />
+                                    </div>
+                                    <div class="del">
+                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
+                                         <div class="price">
+                                            京东价：
+                                            <strong>￥99.00</strong>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                               <!--手把件-->
                            <ul style="display:none;">
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2873,7 +2911,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2885,7 +2923,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                        <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2897,7 +2935,7 @@
                                 </li>
                                 <li>
                                     <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -2909,190 +2947,7 @@
                                 </li>
                                 <li class="last">
                                     <div class="img">
-                                     <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                             <!--雕塑-->
-                            <ul style="display:none;">
-                                <li>
-                                    <div class="img">
-                                        <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                        <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                     <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                      <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
-                                    </div>
-                                    <div class="del">
-                                        <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
-                                         <div class="price">
-                                            京东价：
-                                            <strong>￥99.00</strong>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="last">
-                                    <div class="img">
-                                       <img src="Images/xh.jpg"  />
+                                        <img src="ECImages/l.png" />
                                     </div>
                                     <div class="del">
                                         <div class="title">SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色</div>
@@ -3152,20 +3007,20 @@
                 </div>
                 <div id="TuiJian">
                     <div>
-                        <img src="Images/tuijian.png" /></div>
+                        <img src="ECImages/tuijian.png" /></div>
                     <ul>
                         <li class="margin-r4"><a href="#">
-                            <img src="Images/demo2.png" /></a></li>
+                            <img src="ECImages/demo2.png" /></a></li>
                         <li><a href="#">
-                            <img src="Images/demo2.png" /></a></li>
+                            <img src="ECImages/demo2.png" /></a></li>
                         <li class="margin-r4"><a href="#">
-                            <img src="Images/demo2.png" /></a></li>
+                            <img src="ECImages/demo2.png" /></a></li>
                         <li><a href="#">
-                            <img src="Images/demo2.png" /></a></li>
+                            <img src="ECImages/demo2.png" /></a></li>
                         <li class="margin-r4"><a href="#">
-                            <img src="Images/demo2.png" /></a></li>
+                            <img src="ECImages/demo2.png" /></a></li>
                         <li><a href="#">
-                            <img src="Images/demo2.png" /></a></li>
+                            <img src="ECImages/demo2.png" /></a></li>
                     </ul>
                     <div>
                         <a href="#">查看更多</a>
@@ -3173,12 +3028,12 @@
                 </div>
                 <div id="SheJiShi">
                     <div>
-                        <img src="Images/shejishi.png" /></div>
+                        <img src="ECImages/shejishi.png" /></div>
                     <ul>
                         <li class="s_first">
                             <div class="s_img">
                                 <a>
-                                    <img src="Images/demo3.png" /></a>
+                                    <img src="ECImages/demo3.png" /></a>
                             </div>
                             <div class="s_name">
                                 名称：
@@ -3193,7 +3048,7 @@
                         <li>
                             <div class="s_img">
                                 <a>
-                                    <img src="Images/demo3.png" /></a>
+                                    <img src="ECImages/demo3.png" /></a>
                             </div>
                             <div class="s_name">
                                 名称：
@@ -3209,12 +3064,12 @@
                 </div>
                 <div id="Designer">
                     <div>
-                        <img src="Images/shejishi.png" /></div>
+                        <img src="ECImages/shejishi.png" /></div>
                     <ul>
                         <li class="s_first">
                             <div class="s_img">
                                 <a>
-                                    <img src="Images/demo3.png" /></a>
+                                    <img src="ECImages/demo3.png" /></a>
                             </div>
                             <div class="s_name">
                                 名称：
@@ -3229,7 +3084,7 @@
                         <li>
                             <div class="s_img">
                                 <a>
-                                    <img src="Images/demo3.png" /></a>
+                                    <img src="ECImages/demo3.png" /></a>
                             </div>
                             <div class="s_name">
                                 名称：
@@ -3245,70 +3100,32 @@
                 </div>
                 <div id="NowSee">
                     <div>
-                        <img src="Images/nowsee.png" />
+                        <img src="ECImages/nowsee.png" />
                     </div>
-                    <ul>
-                        <li>
-                            <div class="n_img">
-                                <a>
-                                    <img src="Images/demo4.png" /></a>
-                            </div>
-                            <div class="n_name">
-                                名称：
-                            </div>
-                            <div class="n_des">
-                                简介简介简介简介简介简介简介简介简介简介简介简介简介简介
-                            </div>
-                        </li>
-                        <li>
-                            <div class="n_img">
-                                <a>
-                                    <img src="Images/demo4.png" /></a>
-                            </div>
-                            <div class="n_name">
-                                名称：
-                            </div>
-                            <div class="n_des">
-                                简介简介简介简介简介简介简介简介简介简介简介简介简介简介
-                            </div>
-                        </li>
-                        <li>
-                            <div class="n_img">
-                                <a>
-                                    <img src="Images/demo4.png" /></a>
-                            </div>
-                            <div class="n_name">
-                                名称：
-                            </div>
-                            <div class="n_des">
-                                简介简介简介简介简介简介简介简介简介简介简介简介简介简介
-                            </div>
-                        </li>
-                          <li>
-                            <div class="n_img">
-                                <a>
-                                    <img src="Images/demo4.png" /></a>
-                            </div>
-                            <div class="n_name">
-                                名称：
-                            </div>
-                            <div class="n_des">
-                                简介简介简介简介简介简介简介简介简介简介简介简介简介简介
-                            </div>
-                        </li>
-                        <li>
-                            <div class="n_img">
-                                <a>
-                                    <img src="Images/demo4.png" /></a>
-                            </div>
-                            <div class="n_name">
-                                名称：
-                            </div>
-                            <div class="n_des">
-                                简介简介简介简介简介简介简介简介简介简介简介简介简介简介
-                            </div>
-                        </li>
-                       
+                    <ul class="clearfix">
+                        <li class="goodsimg"><a target="_blank" href="goods.php?id=33">
+                            <img class="B_blue" alt="SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色" src="ECImages/l.png"></a></li><li>
+                                <a title="SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色" target="_blank" href="goods.php?id=33">SWISSMOBILITY瑞动
+                                    26寸商务电脑拉杆箱红色</a><br>
+                                本店售价：<font class="f1">￥99元</font><br>
+                            </li>
+                    </ul>
+
+                     <ul class="clearfix">
+                        <li class="goodsimg"><a target="_blank" href="goods.php?id=33">
+                            <img class="B_blue" alt="SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色" src="ECImages/l.png"></a></li><li>
+                                <a title="SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色" target="_blank" href="goods.php?id=33">SWISSMOBILITY瑞动
+                                    26寸商务电脑拉杆箱红色</a><br>
+                                本店售价：<font class="f1">￥99元</font><br>
+                            </li>
+                    </ul>
+                     <ul class="clearfix">
+                        <li class="goodsimg"><a target="_blank" href="goods.php?id=33">
+                            <img class="B_blue" alt="SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色" src="ECImages/l.png"></a></li><li>
+                                <a title="SWISSMOBILITY瑞动 26寸商务电脑拉杆箱红色" target="_blank" href="goods.php?id=33">SWISSMOBILITY瑞动
+                                    26寸商务电脑拉杆箱红色</a><br>
+                                本店售价：<font class="f1">￥99元</font><br>
+                            </li>
                     </ul>
                 </div>
             </div>
