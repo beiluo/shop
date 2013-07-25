@@ -112,9 +112,9 @@ ul,li
 {
     width:260px;
     float:left;
-    height:356px;
+    height:360px;
     border:solid 1px #daeacf;
-    padding:22px 0;
+    padding:20px 0px;
 }
 
 #MiddleTranslate
@@ -129,9 +129,7 @@ ul,li
 
 .NavHead 
 {
-    background-color:#fbf2ec;
     width:100%;
-    height:26px;
     text-align:center;
     float:left;
 }
@@ -140,16 +138,17 @@ ul,li
     background-image:url(leftnav.png);
     background-repeat:no-repeat;
     display:block;
-    height:26px;
-    line-height:26px;
+    height:22px;
     margin-left:7px;
     /*margin:0 auto;*/
 }
 .NavContent
 {
-    width:240px;
-    padding:5px 10px 0px 30px;
+    width:223px;
+    margin:5px 18px 10px;
     float:left;
+    padding-bottom:10px;
+    border-bottom:solid 1px #b3b3b3;
 }
     .NavContent li
     {
@@ -159,11 +158,11 @@ ul,li
     }
         .NavContent li a
         {
-            background-image:url(leftsubnav.png);
-            background-repeat:no-repeat;
             display:block;
             width:100%;
-               text-indent: -9999px;
+            text-decoration:none;
+            color:#626262;
+            font-family:"微软雅黑"
         }
 .jiaju
 {
@@ -289,28 +288,25 @@ ul,li
 
 .ysp
 {
-    width:50px;
-    background-position:0 center;
+    background-position:0 -10px;
 }
 .zgsh
 {
-    background-position: -52px center;
-    width: 69px;
+    background-position:0 -41px;
 }
 .xhds
 {
-    background-position: -120px center;
-    width: 74px;
+    background-position: 0 -74px;
 }
 .gwgyp
 {
-     background-position: -194px center;
-    width: 90px;
+     background-position: 0 -104px;
+     height:50px;
 }
 .yspdz
 {
-     background-position: -284px center;
-    width: 92px;
+    background-position: 0 -150px;
+     height:50px;
 }
 
 #Content
@@ -578,6 +574,7 @@ ul,li
     border:solid 1px #daeacf;
     width:200px;
     float:right;
+    height:372px;
     
 }
 
@@ -1096,24 +1093,24 @@ float:left;
     background-image:url(s.png);
     background-repeat:no-repeat;
     background-position:left top;
-    width:20px;
+    width:22px;
     height:14px;
     position:absolute;
     top:20px;
 }
 #YanShengPin .move
 {
-    left:182px;
+    left:224px;
 }
 
 #GuWan .move
 {
-     left:177px;
+     left:224px;
 }
 
 #ZhongGuoShuHua .move
 {
-     left:177px;
+     left:224px;
 }
 
 #XiHua .move
