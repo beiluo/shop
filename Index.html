@@ -3,8 +3,9 @@
 <head>
     <title>艺术口袋</title>
     <link href="ECImages/index.css" rel="stylesheet" type="text/css" />
-    <link href="ECImages/allinone_thumbnailsBanner.css" rel="stylesheet" type="text/css">
     <script src="ECImages/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="ECImages/flexslider.css" type="text/css" media="screen" />
+     <script src="ECImages/jquery.flexslider-min.js"></script>
     <script type="text/javascript">
         $(function () {
             $(".ntb li").mouseover(function () {
@@ -17,6 +18,12 @@
                 var left = offset + width / 2 - 10;
                 $(this).parent().siblings("div.move").animate({ left: left + "px" }, 300);
 
+            });
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
             });
         });
 </script>
@@ -86,7 +93,22 @@
                         </div>
                     </div>
                     <div id="MiddleTranslate">
-                        
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="ECImages/kitchen_adventurer_cheesecake_brownie.jpg" />
+                                </li>
+                                <li>
+                                    <img src="ECImages/kitchen_adventurer_lemon.jpg" />
+                                </li>
+                                <li>
+                                    <img src="ECImages/kitchen_adventurer_donut.jpg" />
+                                </li>
+                                <li>
+                                    <img src="ECImages/kitchen_adventurer_caramel.jpg" />
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div id="Content">
