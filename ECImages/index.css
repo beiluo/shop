@@ -68,6 +68,8 @@ ul,li
 {
     width:80px;
     float:left;
+    height:29px;
+    line-height:29px;
 }
 .topright ul li
 {
@@ -487,8 +489,8 @@ ul,li
 			border-top: 1px solid #DDDDDD;
 			border-right: 1px dotted #F1F1F1;
 			padding-top:14px;
-            _height:217px;
-            min-height:217px;
+            _height:170px;
+            min-height:170px;
         }
     .BarContent .img
     {
@@ -506,16 +508,15 @@ ul,li
     {
         background-image:url(like.png);
         background-repeat:no-repeat;
-        width:64px;
+        display:block;
         height:21px;
-        float:right;
-        margin:14px 4px 8px 4px;
+        width:64px; 
+        margin-left:3px;
+        text-indent:-9999px;
+        font-size:14px;
     }
     .BarContent .title
     {
-        float:left;
-        margin:4px;
-         width:158px;
         line-height:21px;
         color:#333;
     }
@@ -524,17 +525,7 @@ ul,li
         color:#333;
         text-decoration:none;
     }
-	  .BarContent .price
-    {
-        float:left;
-        margin:4px;
-         width:170px;
-        height:21px;
-        color:#333;
-    }
-	.BarContent .price strong{
-		color:#E4393C;
-	}
+	 
     .BarContent .last
     {
         border-right:none;
@@ -568,13 +559,61 @@ ul,li
     float:right;
     width:226px;
 }
-#Login
+#News
 {
     padding:14px 8px 14px 14px;
     border:solid 1px #daeacf;
     width:200px;
     float:right;
-    height:372px;
+    height:172px;
+    
+}
+.NewsTitles
+{
+    margin-top:7px;
+    float:left;
+}
+.NewsTitles li
+{
+    height:25px;
+    line-height:25px;
+    border-bottom:1px dotted #CCCCCC;
+}
+.NewsTitles li a
+{
+    text-decoration:none;
+    color:Black;
+}
+#News ul
+{
+    float:left;
+    width:200px;
+}
+#News .ynxw
+{
+    background-image:url(news.png);
+    background-repeat:no-repeat;
+    background-position:0 0;
+    width:96px;
+    height:31px;
+    float:left;
+}
+#News .wzgg
+{
+      background-image:url(news.png);
+    background-repeat:no-repeat;
+    background-position:-96px 0;
+    width:96px;
+    height:31px;
+    float:left;
+}
+#Weibo
+{
+    border:solid 1px #daeacf;
+    width:222px;
+    float:right;
+    height:193px;
+    margin-top:5px;
     
 }
 
@@ -942,7 +981,7 @@ ul,li
     width:100%;
     float:left;
     position:relative;
-    padding:10px 0px;
+    padding:10px 0px 0px;
 }
 
     #Footer .fot
@@ -956,15 +995,12 @@ ul,li
     }
     #Footer .huoban
     {
-        height: 60px;
-        border-top: solid 1px #DDDDDD;
+        height: 40px;
     }
 
        #Footer .hzhb
     {
-  width:100%;
-       position:absolute;
-       top:-5px;
+        width:100%;
        text-align:center;
     }
         #Footer .hzhb span
@@ -985,7 +1021,7 @@ ul,li
             {
                height:40px;
                 float:left;
-                 padding:10px 23px;
+                 padding:0px 23px;
                  line-height:40px;
 
             }
