@@ -475,6 +475,10 @@ ul,li
     margin-top:7px;
     float:left;
 }
+.BarContent table
+{
+    width:158px;
+}
     .BarContent ul
     {
         width:100%;
@@ -510,8 +514,7 @@ ul,li
         background-repeat:no-repeat;
         display:block;
         height:21px;
-        width:64px; 
-        margin-left:3px;
+        width:25px; 
         text-indent:-9999px;
         font-size:14px;
     }
@@ -1040,34 +1043,36 @@ ul,li
 }
 .k_top
 {
+    margin-left:20px;
 }
     .k_top .ps
     {
-        background-position: -33px 0;
+        background-position: -23px 5px;
     }
 
     .k_top .zf
     {
-        background-position: -66px 0;
+        background-position: -46px 5px;
     }
 
     .k_top .sh
     {
-        background-position: -99px 0;
+        background-position: -69px 5px;
     }
 
     .k_top .dkh
     {
-        background-position: -132px 0;
+        background-position: -92px 5px;
     }
 .ks1
 {
     background-image:url("f.png");
     background-repeat:no-repeat;
-    width:33px;
+    width:23px;
     height:33px;
     display:block;
     float:left;
+    background-position:0 5px;
 }
 .ks2
 {
@@ -1078,7 +1083,7 @@ ul,li
     font-weight:bold;
     color:#666666;
     float:left;
-    padding:0 10px;
+    padding:0 5px;
 }
 .k ul
 {
